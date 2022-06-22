@@ -51,7 +51,7 @@ public class Servicos implements Serializable {
 		
 		this.datasaida = LocalDateTime.now(); 
 		
-		if(this.dataminima.getHour() <= this.datasaida.getHour()) {
+		if(this.dataminima.getHour() < this.datasaida.getHour()) {
 			
 			aux = this.datainicio.getMinute();
 			

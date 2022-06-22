@@ -15,7 +15,7 @@ public class De_turno extends Cliente implements Serializable{
 	}
 
 	@Override
-	public boolean FinalizarServico(Vaga vaga) {//conferindo se ele sai no turno correspondente para ver se paga valor de vaga
+	public boolean FinalizarServico(Vaga vaga) {//conferindo se ele sai no turno correspondente
 		int cont = this.historico.size() ;
 		
 		boolean aux = this.servAberto.solicitarRetirada(vaga, this.desconto);
